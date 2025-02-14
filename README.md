@@ -1,9 +1,25 @@
+### Proyecto NLP - Análisis de Sentimientos  
 
+Este proyecto aborda el análisis de sentimientos utilizando múltiples enfoques, incluyendo modelos tradicionales como **TF-IDF con Logistic Regression**, **CountVectorizer con SVC**, y un modelo neuronal basado en **GRU**. Se emplean técnicas de preprocesamiento avanzadas con **spaCy, NLTK y regex**, así como estrategias para mitigar el desbalanceo de clases mediante **SMOTETomek**.
 
+#### 📂 Estructura del Proyecto  
 
-![Arquitectura del Proyecto](./assets/estructura.png)
+```bash
+📦 NLP Sentiment Analysis
+│── 📄 app_features.py         # Exploración de datos (EDA), limpieza y análisis de texto
+│── 📄 app_extractor.py        # Preprocesamiento con spaCy, NLTK, regex y contractions
+│── 📄 app_utils.py            # Funciones auxiliares (tokenización BERT, histogramas, etc.)
+│── 📄 app_model.py            # Implementación de modelos clásicos (TF-IDF, SVC, etc.)
+│── 📄 app_word2vec.py         # Implementación de Word2Vec y visualización de embeddings
+│── 📄 app_dataset.py          # Carga de embeddings precomputados para DeepModelGRU
+│── 📄 app_training.py         # Entrenamiento de DeepModelGRU con PyTorch y técnicas avanzadas
+│── 📂 datasets/               # Conjunto de datos utilizado en el análisis
+│── 📂 embeddings/             # Embeddings precomputados almacenados
+│── 📂 model/                  # Modelos entrenados y guardados (MModel, DeepModelGRU, Word2Vec)
+│── 📄 requirements.txt        # Librerías necesarias para ejecutar el proyecto
+```
 
-## 🛠️ Descripción de los Módulos  
+#### 🛠️ Descripción de los Módulos  
 
 ### 🔹 `app_features.py`  
 Análisis exploratorio de datos (**EDA**) con limpieza y preprocesamiento. Se examinan los **n-gramas más frecuentes**, la distribución de reseñas, y se visualizan nubes de palabras de **sentimientos positivos y negativos**.  
