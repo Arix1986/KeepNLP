@@ -57,3 +57,7 @@ Modelos entrenados y guardados, incluyendo **MModel, DeepModelGRU y Word2Vec**.
 
 ### 🔹 `requirements.txt`  
 Lista de librerías necesarias para ejecutar el proyecto sin conflictos.  
+
+###  `link de documentos importantes`
+🔗 [Descargar archivos Importantes Modelos,Embeddings ](https://drive.google.com/drive/folders/1r-kICYi6kUamR0JdGpu7LLpP2xKYfYWH?usp=sharing)
+ 
